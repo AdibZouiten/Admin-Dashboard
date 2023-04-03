@@ -1,0 +1,17 @@
+.sidebar-sticky a{
+    color:rgba(0, 0, 0, 0.557);
+}
+.sidebar-sticky li :hover{
+    color:#ffffff;
+    background-color:#0b5ed7;
+
+}
+
+.sidebar-sticky{
+    background-color:#ffffff;
+    padding:10px 10px;
+    color:rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    margin-top:30px;
+}

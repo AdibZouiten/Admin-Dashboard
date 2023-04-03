@@ -1,0 +1,50 @@
+
+<div class="d-flex justify-content-center align-items-center" *ngIf="this.loading">
+  <div class="spinner-border" role="status" style="width: 100px; height: 100px">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+<div *ngIf="!this.loading && this.utilisateur; else errorPanel">
+  <h1 style="margin-bottom: 40px">Info Utilisateur</h1>
+  <div class="card" style="width: 100%">
+    <div class="card-body">
+      <h1 style="text-align: center;" class="card-title">{{ utilisateur.nom }} {{ utilisateur.prenom }}</h1>
+      <div class="d-flex align-items-center justify-content-center">
+        <p style="margin:10px 40px;"><i class="fa-sharp fa-solid fa-envelope" style="color: #373839; "></i>  {{ utilisateur.email }}</p><br />
+        <p style="margin:10px 40px;"><i class="fa-solid fa-house" style="color: #373839;"></i> {{ utilisateur.adresse }}</p><br />
+        <p style="margin:10px 40px;"><i class="fa-solid fa-phone" style="color: #373839;"></i> {{ utilisateur.gsm }}</p><br />
+      </div>
+      <hr>
+      <h5 class="card-text" style="margin:50px 0px;">
+        <strong>ID: </strong> {{ utilisateur.id }}<br /><br />
+        <strong>Matricule :</strong> {{ utilisateur.matricule }}<br /><br />
+        <strong>Created At :</strong> {{ utilisateur.createdAt }}<br /><br />
+        <strong>Updated At :</strong> {{ utilisateur.updatedAt }}<br /><br />
+        <strong>Service :</strong> {{ utilisateur.serviceId }}<br /><br />
+      </h5>
+    </div>
+  </div>
+</div>
+
+<ng-template #errorPanel>
+  <div
+    class="alert alert-danger text-center"
+    *ngIf="this.error.status === 404; else serverErrorMessage"
+  >
+    <i class="fas fa-exclamation-circle fa-2xl"></i>
+    <h3 style="margin:10px 0px;">Utilisateur Introuvable</h3>
+    <p>L'utilisateur que vous cherchez n'existe pas</p>
+  </div>
+  <ng-template #serverErrorMessage>
+    <div class="alert alert-danger d-flex justify-content-center align-items-center" style="padding:30px;">
+        <div>
+            <i class="fas fa-exclamation-circle fa-2xl" style="margin-right:30px;"></i>
+        </div>
+        <div>
+            <h5>{{ this.error.message }}</h5>
+        </div>
+       
+    </div>
+  </ng-template>
+</ng-template>
