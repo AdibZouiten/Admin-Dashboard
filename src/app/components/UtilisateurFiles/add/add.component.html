@@ -1,0 +1,35 @@
+<form autocomplete="off">
+    <h1>Add user form</h1>
+    <div class="row">
+        <div class="mb-3 col">
+            <label for="exampleFormControlInput1" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="utilisateur.nom" name="nom" placeholder="Doe">
+        </div>
+        <div class="mb-3 col">
+            <label for="exampleFormControlInput1" class="form-label">Prenom</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="utilisateur.prenom" name="prenom" placeholder="Jhon">
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" [(ngModel)]="utilisateur.email" name="email" placeholder="email@exemple.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Matricule</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="utilisateur.matricule" name="matricule" placeholder="ABC123">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Adresse</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="utilisateur.adresse" name="adresse" placeholder="345 avenue des Champs-Élysées">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Gsm</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="utilisateur.gsm" name="gsm" placeholder="0606060606">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Service</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="utilisateur.serviceId" name="serviceId" placeholder="123456">
+    </div>
+    <button type="submit" class="btn btn-success" (click)="createUser()">Submit</button>
+    <input autocomplete="false" name="hidden" type="text" style="display:none;">
+</form>

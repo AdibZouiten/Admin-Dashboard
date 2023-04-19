@@ -1,0 +1,43 @@
+
+
+
+
+<div class="table-responsive ">
+    <div class="top-table">
+        <h3 style="color:rgb(0, 0, 0); margin-bottom:0.9em; opacity:0.8;">Directions</h3>
+        <button class="btn btn-success" style="margin-bottom:50px;margin:1em 3em;"><a style="color:rgb(255, 255, 255);" href="#" routerLink="add/">ajouter une Direction</a></button>
+    </div>
+    <table  class="table  table-hover table-light">
+        <thead>
+        <tr >
+            <th scope="col">ID</th>
+            <th scope="col">Nom Direction</th>
+            <th scope="col">Code</th>
+            <th scope="col">ID Directeur</th>   
+            <th scope="col">Actions</th>                 
+        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let Direction of Directions" routerLink="{{Direction.id}}">
+                <td>{{Direction.id}}</td>
+                <td>{{Direction.nomDirection}}</td>
+                <td>{{Direction.code}}</td>
+                <td>{{Direction.idDirecteur}}</td>
+                <td>
+                <button type="button" class="btn btn-danger" (click)="delete($event,Direction.id)"><i class="fa-solid fa-trash" style="color: #ff0000;"></i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="d-flex justify-content-center p-2 mt-2 border-top">
+        <ngb-pagination
+          [collectionSize]="collectionSize"
+          [(page)]="page"
+          [pageSize]="pageSize"
+          (pageChange)="refreshUsers()"
+        >
+        </ngb-pagination>
+    </div>
+
+    
+</div>

@@ -1,0 +1,13 @@
+<form>
+    <h1>Edit Direction</h1>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">nom direction</label>
+        <input type="text" class="form-control" [(ngModel)]="familles.nomFamille" name="nomFamille"  id="exampleFormControlInput1" placeholder="">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Code</label>
+        <input type="text" class="form-control" [(ngModel)]="familles.idDirection" name="idDirection"  id="exampleFormControlInput1" placeholder="">
+    </div>
+
+    <button type="submit" class="btn btn-success" (click)="edit()">submit</button>
+</form>

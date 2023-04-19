@@ -1,32 +1,6 @@
 {
   "Utilisateurs": [
     {
-      "id": 1,
-      "nom": "Dupont",
-      "prenom": "Jean",
-      "email": "jean.dupont@example.com",
-      "matricule": "ABC123",
-      "mot de passe": "secret123",
-      "adresse": "123 rue de la Paix",
-      "gsm": "0612345678",
-      "createdAt": "2023-03-27T12:00:00Z",
-      "updatedAt": "2023-04-03T10:55:08.413Z",
-      "serviceId": 1
-    },
-    {
-      "id": 2,
-      "nom": "Martin",
-      "prenom": "Sophie",
-      "email": "sophie.martin@example.com",
-      "matricule": "DEF456",
-      "mot de passe": "confidentiel456",
-      "adresse": "456 avenue des Fleurs",
-      "gsm": "0678901234",
-      "createdAt": "2023-03-28T10:00:00Z",
-      "updatedAt": "2023-04-03T10:57:43.059Z",
-      "serviceId": 1
-    },
-    {
       "id": 3,
       "nom": "Lefebvre",
       "prenom": "Pierre",
@@ -37,19 +11,6 @@
       "gsm": "0678905678",
       "createdAt": "2023-03-29T14:00:00Z",
       "updatedAt": "2023-03-29T15:30:00Z",
-      "serviceId": 2
-    },
-    {
-      "id": 4,
-      "nom": "Durand",
-      "prenom": "Marie",
-      "email": "marie.durand@example.com",
-      "matricule": "JKL012",
-      "mot de passe": "mdp123",
-      "adresse": "012 boulevard de la Liberté",
-      "gsm": "0678909876",
-      "createdAt": "2023-03-30T16:00:00Z",
-      "updatedAt": "2023-03-30T17:30:00Z",
       "serviceId": 2
     },
     {
@@ -75,7 +36,7 @@
       "adresse": "345 avenue des Champs-Élysées",
       "gsm": "0612345678",
       "createdAt": "2023-03-31T09:00:00Z",
-      "updatedAt": "2023-03-31T10:30:00Z",
+      "updatedAt": "2023-04-04T17:11:34.866Z",
       "serviceId": 3
     },
     {
@@ -131,30 +92,286 @@
       "serviceId": 3
     },
     {
-      "id": 11,
-      "nom": "Roux",
-      "prenom": "François",
-      "email": "francois.roux@example.com",
-      "matricule": "MNO345",
-      "mot de passe": "secret456",
-      "adresse": "345 avenue des Champs-Élysées",
-      "gsm": "0612345678",
-      "createdAt": "2023-03-31T09:00:00Z",
-      "updatedAt": "2023-03-31T10:30:00Z",
-      "serviceId": 3
+      "nom": "zouiten",
+      "prenom": "adib",
+      "email": "adibzouiten7@gmail.com",
+      "password": "",
+      "matricule": "CVB232",
+      "adresse": "temara massira 1 1414",
+      "gsm": "0633751253",
+      "serviceId": 9,
+      "updatedAt": "2023-04-06T14:53:44.339Z",
+      "createdAt": "2023-04-06T14:47:29.096Z",
+      "id": 1680792449096
+    }
+  ],
+  "service": [
+    {
+      "id": "1",
+      "nomService": "Procurement",
+      "updatedAt": "2023-04-06T14:53:44.339Z",
+      "createdAt": "2023-04-06T14:47:29.096Z",
+      "idDirection": 96,
+      "idChefService": 168
     },
     {
-      "id": 12,
-      "nom": "Roux",
-      "prenom": "François",
-      "email": "francois.roux@example.com",
-      "matricule": "MNO345",
-      "mot de passe": "secret456",
-      "adresse": "345 avenue des Champs-Élysées",
-      "gsm": "0612345678",
-      "createdAt": "2023-03-31T09:00:00Z",
-      "updatedAt": "2023-03-31T10:30:00Z",
-      "serviceId": 3
+      "id": "2",
+      "nomService": "HR",
+      "updatedAt": "2023-04-07T09:21:15.782Z",
+      "createdAt": "2023-04-07T09:18:08.559Z",
+      "idDirection": 45,
+      "idChefService": 87
+    },
+    {
+      "id": "3",
+      "nomService": "Finance",
+      "updatedAt": "2023-04-07T15:12:09.445Z",
+      "createdAt": "2023-04-07T15:09:30.001Z",
+      "idDirection": 78,
+      "idChefService": 105
+    },
+    {
+      "id": "4",
+      "nomService": "Sales",
+      "updatedAt": "2023-04-08T11:57:22.211Z",
+      "createdAt": "2023-04-08T11:53:10.987Z",
+      "idDirection": 55,
+      "idChefService": 76
+    },
+    {
+      "id": "5",
+      "nomService": "Marketing",
+      "updatedAt": "2023-04-08T16:28:33.749Z",
+      "createdAt": "2023-04-08T16:25:09.001Z",
+      "idDirection": 67,
+      "idChefService": 123
+    },
+    {
+      "id": "6",
+      "nomService": "IT",
+      "updatedAt": "2023-04-09T09:41:55.336Z",
+      "createdAt": "2023-04-09T09:37:11.009Z",
+      "idDirection": 89,
+      "idChefService": 45
+    },
+    {
+      "id": "7",
+      "nomService": "Operations",
+      "updatedAt": "2023-04-09T14:15:41.663Z",
+      "createdAt": "2023-04-09T14:12:01.876Z",
+      "idDirection": 37,
+      "idChefService": 98
+    },
+    {
+      "id": "8",
+      "nomService": "Customer Support",
+      "updatedAt": "2023-04-09T17:49:59.224Z",
+      "createdAt": "2023-04-09T17:45:33.505Z",
+      "idDirection": 41,
+      "idChefService": 76
+    }
+  ],
+  "direction": [
+    {
+      "id": "2",
+      "nomDirection": "finance",
+      "code": "fin",
+      "updatedAt": "2023-04-09T18:12:45.789Z",
+      "createdAt": "2023-04-09T18:10:22.122Z",
+      "idDirecteur": 25
+    },
+    {
+      "id": "3",
+      "nomDirection": "marketing",
+      "code": "mkt",
+      "updatedAt": "2023-04-09T18:35:18.906Z",
+      "createdAt": "2023-04-09T18:32:59.155Z",
+      "idDirecteur": 18
+    },
+    {
+      "id": "4",
+      "nomDirection": "human resources",
+      "code": "hr",
+      "updatedAt": "2023-04-09T18:48:29.301Z",
+      "createdAt": "2023-04-09T18:46:11.479Z",
+      "idDirecteur": 37
+    },
+    {
+      "id": "5",
+      "nomDirection": "operations",
+      "code": "ops",
+      "updatedAt": "2023-04-09T19:02:14.812Z",
+      "createdAt": "2023-04-09T18:59:47.247Z",
+      "idDirecteur": 12
+    },
+    {
+      "id": "6",
+      "nomDirection": "sales",
+      "code": "sls",
+      "updatedAt": "2023-04-09T19:18:37.611Z",
+      "createdAt": "2023-04-09T19:15:22.983Z",
+      "idDirecteur": 29
+    },
+    {
+      "id": "7",
+      "nomDirection": "customer service",
+      "code": "cs",
+      "updatedAt": "2023-04-09T19:31:49.215Z",
+      "createdAt": "2023-04-09T19:29:18.708Z",
+      "idDirecteur": 15
+    },
+    {
+      "id": "8",
+      "nomDirection": "research and development",
+      "code": "r&d",
+      "updatedAt": "2023-04-09T19:46:51.129Z",
+      "createdAt": "2023-04-09T19:44:18.996Z",
+      "idDirecteur": 22
+    },
+    {
+      "id": "9",
+      "nomDirection": "product management",
+      "code": "pm",
+      "updatedAt": "2023-04-09T20:02:38.554Z",
+      "createdAt": "2023-04-09T19:59:17.832Z",
+      "idDirecteur": 19
+    }
+  ],
+  "familles": [
+    {
+      "id": "1",
+      "nomFamille": "pc",
+      "updatedAt": "2023-04-09T20:02:38.554Z",
+      "createdAt": "2023-04-09T19:59:17.832Z",
+      "idDirection": 212
+    },
+    {
+      "id": "2",
+      "nomFamille": "laptop",
+      "updatedAt": "2023-04-09T21:15:41.987Z",
+      "createdAt": "2023-04-09T21:12:05.731Z",
+      "idDirection": 101
+    },
+    {
+      "id": "3",
+      "nomFamille": "tablet",
+      "updatedAt": "2023-04-09T22:30:15.208Z",
+      "createdAt": "2023-04-09T22:27:19.546Z",
+      "idDirection": 456
+    },
+    {
+      "id": "4",
+      "nomFamille": "smartphone",
+      "updatedAt": "2023-04-09T23:45:50.123Z",
+      "createdAt": "2023-04-09T23:42:36.987Z",
+      "idDirection": 789
+    },
+    {
+      "id": "5",
+      "nomFamille": "desktop",
+      "updatedAt": "2023-04-10T00:59:24.432Z",
+      "createdAt": "2023-04-10T00:56:10.765Z",
+      "idDirection": 321
+    },
+    {
+      "id": "6",
+      "nomFamille": "server",
+      "updatedAt": "2023-04-10T01:57:12.111Z",
+      "createdAt": "2023-04-10T01:53:40.222Z",
+      "idDirection": 987
+    },
+    {
+      "id": "7",
+      "nomFamille": "printer",
+      "updatedAt": "2023-04-10T02:45:36.789Z",
+      "createdAt": "2023-04-10T02:42:19.555Z",
+      "idDirection": 654
+    },
+    {
+      "id": "8",
+      "nomFamille": "scanner",
+      "updatedAt": "2023-04-10T03:30:59.333Z",
+      "createdAt": "2023-04-10T03:27:45.111Z",
+      "idDirection": 789
+    },
+    {
+      "id": "9",
+      "nomFamille": "monitor",
+      "updatedAt": "2023-04-10T04:15:22.222Z",
+      "createdAt": "2023-04-10T04:12:09.987Z",
+      "idDirection": 456
+    },
+    {
+      "id": "10",
+      "nomFamille": "keyboard",
+      "updatedAt": "2023-04-10T05:00:45.555Z",
+      "createdAt": "2023-04-10T04:57:30.222Z",
+      "idDirection": 827
+    }
+  ],
+  "Sousfamilles": [
+    {
+      "id": "1",
+      "nomSousFamille": "logitech",
+      "updatedAt": "2023-04-10T05:00:45.555Z",
+      "createdAt": "2023-04-10T04:57:30.222Z",
+      "idFamille": 82
+    },
+    {
+      "id": "2",
+      "nomSousFamille": "samsung",
+      "updatedAt": "2023-04-11T08:15:20.111Z",
+      "createdAt": "2023-04-11T08:12:05.777Z",
+      "idFamille": 43
+    },
+    {
+      "id": "3",
+      "nomSousFamille": "apple",
+      "updatedAt": "2023-04-12T15:30:10.333Z",
+      "createdAt": "2023-04-12T15:27:55.999Z",
+      "idFamille": 17
+    },
+    {
+      "id": "3",
+      "nomSousFamille": "apple",
+      "updatedAt": "2023-04-12T15:30:10.333Z",
+      "createdAt": "2023-04-12T15:27:55.999Z",
+      "idFamille": 17
+    },
+    {
+      "id": "3",
+      "nomSousFamille": "apple",
+      "updatedAt": "2023-04-12T15:30:10.333Z",
+      "createdAt": "2023-04-12T15:27:55.999Z",
+      "idFamille": 17
+    },
+    {
+      "id": "6",
+      "nomSousFamille": "dell",
+      "updatedAt": "2023-04-10T14:55:15.555Z",
+      "createdAt": "2023-04-10T14:52:00.222Z",
+      "idFamille": 29
+    },
+    {
+      "id": "6",
+      "nomSousFamille": "dell",
+      "updatedAt": "2023-04-10T14:55:15.555Z",
+      "createdAt": "2023-04-10T14:52:00.222Z",
+      "idFamille": 29
+    },
+    {
+      "id": "8",
+      "nomSousFamille": "lenovo",
+      "updatedAt": "2023-04-12T22:25:45.333Z",
+      "createdAt": "2023-04-12T22:22:30.999Z",
+      "idFamille": 63
+    },
+    {
+      "id": "9",
+      "nomSousFamille": "canon",
+      "updatedAt": "2023-04-13T05:40:00.444Z",
+      "createdAt": "2023-04-13T05:36:45.111Z",
+      "idFamille": 94
     }
   ]
 }

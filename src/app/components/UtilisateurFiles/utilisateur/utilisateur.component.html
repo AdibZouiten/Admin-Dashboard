@@ -1,0 +1,66 @@
+
+
+<div class="table-responsive">
+  <div class="top-table">
+    <h3 style="color: rgb(0, 0, 0); margin-bottom: 0.9em; opacity: 0.8">
+      Utilisateurs
+    </h3>
+    <button
+      class="btn btn-success"
+      style="margin-bottom: 50px; margin: 1em 3em"
+    >
+      <a style="color: rgb(255, 255, 255)" href="#" routerLink="add/"
+        >ajouter un utilisateur</a
+      >
+    </button>
+  </div>
+  <table class="table table-hover table-light">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Prenom</th>
+        <th scope="col">Email</th>
+        <th scope="col">Matricule</th>
+        <th scope="col">Adresse</th>
+        <th scope="col">Gsm</th>
+        <th scope="col">Service</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let utilisateur of utilisateurs"
+        routerLink="{{ utilisateur.id }}"
+      >
+        <td>{{ utilisateur.id }}</td>
+        <td>{{ utilisateur.nom }}</td>
+        <td>{{ utilisateur.prenom }}</td>
+        <td>{{ utilisateur.email }}</td>
+        <td>{{ utilisateur.matricule }}</td>
+        <td>{{ utilisateur.adresse }}</td>
+        <td>{{ utilisateur.gsm }}</td>
+        <td>{{ utilisateur.serviceId }}</td>
+        <td>
+          <button
+            type="button"
+            class="btn btn-danger"
+            (click)="delete($event, utilisateur.id)"
+          >
+            <i class="fa-solid fa-trash" style="color: #ff0000"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="d-flex justify-content-center p-2 mt-2 border-top">
+    <ngb-pagination
+      [collectionSize]="collectionSize"
+      [(page)]="page"
+      [pageSize]="pageSize"
+      (pageChange)="refreshUsers()"
+    >
+    </ngb-pagination>
+  </div>
+</div>

@@ -1,17 +1,33 @@
-.sidebar-sticky a{
-    color:rgba(0, 0, 0, 0.557);
-}
-.sidebar-sticky li :hover{
-    color:#ffffff;
-    background-color:#0b5ed7;
 
+.sidenav{
+  background-color: white;
+  height:100vh;
+}
+.nav-item a{
+  color:black !important;
+  opacity:0.6;
+  font-size:18px;
+}
+.nav-item i {
+  margin:0px 5px;
 }
 
-.sidebar-sticky{
-    background-color:#ffffff;
-    padding:10px 10px;
-    color:rgb(0, 0, 0);
-    position: sticky;
-    top: 0;
-    margin-top:30px;
+.nav-item a:hover{
+  color: #0062fe !important;
+  opacity:1;
 }
+.nav-item i :hover{
+  color:#1E6FF0 ;
+}
+.nav-item:hover{
+  border-left: 4px solid #1E6FF0 ;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  .sidenav{
+    background-color: transparent;
+  }
+}
+

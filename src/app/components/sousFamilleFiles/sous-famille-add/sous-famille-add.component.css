@@ -1,0 +1,40 @@
+form{
+    margin-bottom:3em;
+    background-color:#ffffff;
+    padding:3em 4em;
+    border-radius:2em;
+    width:100%;
+    
+    color:rgb(0, 0, 0);
+}
+h1{
+    margin-bottom:1em;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+button{
+    background-color:#1E6FF0;
+    margin-top:1em;
+    width:100%;
+}
+button:hover{
+    background-color:#3479e6;
+}
+
+@media only screen and (max-width: 1200px) {
+    form{
+        margin:0em 2em;
+    }
+}
+@media only screen and (max-width: 394px) {
+    form{
+        padding:1.5em 2em;
+    }
+}

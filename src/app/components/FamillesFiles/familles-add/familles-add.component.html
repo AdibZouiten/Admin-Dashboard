@@ -1,0 +1,14 @@
+<form autocomplete="off">
+    <h1>Add Direction form</h1>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nom Direction</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="famille.nomFamille" name="nomFamille" placeholder="">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Code</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="famille.idDirection" name="idDirection" placeholder="">
+    </div>
+    <button type="submit" class="btn btn-success" (click)="createFamille()">Submit</button>
+    <input autocomplete="false" name="hidden" type="text" style="display:none;">
+</form>
+

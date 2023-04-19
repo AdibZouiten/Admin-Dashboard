@@ -1,3 +1,15 @@
-main{
-    min-height: 600px;
+
+
+.col-xl-2{
+    background-color: white;
+}
+.row{
+    height:9vh;
+}
+
+@media only screen and (max-width: 1200px) {
+    .col-xl-2{
+        background-color: transparent;
+        margin-left:3em;
+    }
 }

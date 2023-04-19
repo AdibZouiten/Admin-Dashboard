@@ -1,0 +1,57 @@
+
+<div class="d-flex justify-content-center align-items-center" *ngIf="this.loading">
+    <div class="spinner-border" role="status" style="width: 100px; height: 100px">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  
+  <div class="big-card" *ngIf="!this.loading && this.SousFamille; else errorPanel">
+    <div class="card" style="width: 100%">
+      <div class="card-body">
+        <div class="card-line">
+          <div class="card-item-label"><p>ID</p></div>
+          <div class="card-item">{{SousFamille.id}}</div>
+        </div>
+        <div class="card-line">
+          <div class="card-item-label"><p>Nom Service</p></div>
+          <div class="card-item">{{SousFamille.nomSousFamille}}</div>
+        </div>
+        <div class="card-line">
+          <div class="card-item-label"><p>Updated At</p></div>
+          <div class="card-item">{{SousFamille.updatedAt}}</div>
+        </div>
+        <div class="card-line">
+          <div class="card-item-label"><p>Created At</p></div>
+          <div class="card-item">{{SousFamille.createdAt}}</div>
+        </div>
+        <div class="card-line">
+          <div class="card-item-label"><p>ID Direction</p></div>
+          <div class="card-item">{{SousFamille.idFamille}}</div>
+        </div>
+        <a href="#" class="btn btn-warning" routerLink="/sousfamilles/edit/{{SousFamille.id}}">Edit</a>
+      </div>
+    </div>
+  </div>
+  
+  <ng-template #errorPanel>
+    <div
+      class="alert alert-danger text-center"
+      *ngIf="this.error.status === 404; else serverErrorMessage"
+    >
+      <i class="fas fa-exclamation-circle fa-2xl"></i>
+      <h3 style="margin:10px 0px;">Service Introuvable</h3>
+      <p>Le Service que vous cherchez n'existe pas</p>
+    </div>
+    <ng-template #serverErrorMessage>
+      <div class="alert alert-danger d-flex justify-content-center align-items-center" style="padding:30px;">
+          <div>
+              <i class="fas fa-exclamation-circle fa-2xl" style="margin-right:30px;"></i>
+          </div>
+          <div>
+              <h5>{{ this.error.message }}</h5>
+          </div>
+         
+      </div>
+    </ng-template>
+  </ng-template>
+  

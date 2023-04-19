@@ -1,0 +1,73 @@
+
+<div class="d-flex justify-content-center align-items-center" *ngIf="this.loading">
+  <div class="spinner-border" role="status" style="width: 100px; height: 100px">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+<div class="big-card" *ngIf="!this.loading && this.utilisateur; else errorPanel">
+  <div class="card" style="width: 100%">
+    <div class="card-title">
+      <div>
+        <h1 style="text-align: start">{{ utilisateur.nom }} {{ utilisateur.prenom }}</h1>
+        <p style="text-align: start;">{{ utilisateur.adresse }}</p><br />
+      </div>
+      <div>
+        <a href="#" routerLink="/utilisateur/edit/{{utilisateur.id}}"><i class="fa-solid fa-pen fa-xl" style="color: #000000a4;"></i></a>
+      </div>
+    </div>
+    <hr>
+    <div class="card-body">
+      <div class="card-line">
+        <div class="card-item-label"><p>ID</p></div>
+        <div class="card-item">{{utilisateur.id}}</div>
+      </div>
+        <div class="card-line">
+          <div class="card-item-label"><p>Phone</p></div>
+          <div class="card-item">{{ utilisateur.gsm }}</div>
+        </div>
+        <div class="card-line">
+          <div class="card-item-label"><p>Email</p></div>
+          <div class="card-item">{{utilisateur.email}}</div>
+        </div>
+        <div class="card-line">
+          <div class="card-item-label"><p>Matricule</p></div>
+          <div class="card-item">{{utilisateur.matricule}}</div>
+        </div>
+        <div class="card-line">
+          <div class="card-item-label"><p>Created At</p></div>
+          <div class="card-item">{{utilisateur.createdAt}}</div>
+        </div>
+        <div class="card-line">
+          <div class="card-item-label"><p>Updated At</p></div>
+          <div class="card-item">{{utilisateur.updatedAt}}</div>
+        </div>
+        <div class="card-line">
+          <div class="card-item-label"><p>Service</p></div>
+          <div class="card-item">{{utilisateur.serviceId}}</div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #errorPanel>
+  <div
+    class="alert alert-danger text-center"
+    *ngIf="this.error.status === 404; else serverErrorMessage"
+  >
+    <i class="fas fa-exclamation-circle fa-2xl"></i>
+    <h3 style="margin:10px 0px;">Utilisateur Introuvable</h3>
+    <p>L'utilisateur que vous cherchez n'existe pas</p>
+  </div>
+  <ng-template #serverErrorMessage>
+    <div class="alert alert-danger d-flex justify-content-center align-items-center" style="padding:30px;">
+        <div>
+            <i class="fas fa-exclamation-circle fa-2xl" style="margin-right:30px;"></i>
+        </div>
+        <div>
+            <h5>{{ this.error.message }}</h5>
+        </div>
+       
+    </div>
+  </ng-template>
+</ng-template>

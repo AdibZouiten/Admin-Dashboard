@@ -1,0 +1,16 @@
+<form>
+    <h1>Edit user</h1>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" [(ngModel)]="Service.nomService" name="nomService"  id="exampleFormControlInput1" placeholder="email@exemple.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" [(ngModel)]="Service.idDirection" name="idDirection"  id="exampleFormControlInput1" placeholder="email@exemple.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" [(ngModel)]="Service.idChefService" name="idChefService"  id="exampleFormControlInput1" placeholder="email@exemple.com">
+    </div>
+    <button type="submit" class="btn btn-success" (click)="editService()">submit</button>
+</form>

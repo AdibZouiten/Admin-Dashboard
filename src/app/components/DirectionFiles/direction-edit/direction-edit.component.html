@@ -1,0 +1,16 @@
+<form>
+    <h1>Edit Direction</h1>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">nom direction</label>
+        <input type="text" class="form-control" [(ngModel)]="direction.nomDirection" name="nomDirection"  id="exampleFormControlInput1" placeholder="">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Code</label>
+        <input type="text" class="form-control" [(ngModel)]="direction.code" name="code"  id="exampleFormControlInput1" placeholder="">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">ID Directeur</label>
+        <input type="text" class="form-control" [(ngModel)]="direction.idDirecteur" name="idDirecteur"  id="exampleFormControlInput1" placeholder="">
+    </div>
+    <button type="submit" class="btn btn-success" (click)="editDirection()">submit</button>
+</form>

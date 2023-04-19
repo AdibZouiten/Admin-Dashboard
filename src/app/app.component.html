@@ -1,17 +1,20 @@
-<!-- Begin Navbar -->
+<!-- Begin Navbar 
 <app-navbar></app-navbar>
-<!-- End Navbar -->
+ End Navbar -->
 
 <!-- Begin SideBar -->
 <!-- <app-sidebar></app-sidebar> -->
 <!-- End SideBar -->
 
-<div class="container-fluid mt-5">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-2">
-      <app-sidebar></app-sidebar>
+    <div class="col-sm-12 col-xl-2 pt-5">
+      <app-sidebar class="d-none d-xl-block"></app-sidebar>
+      <div class="d-block d-xl-none">
+        <app-offcanvas-sidebar></app-offcanvas-sidebar>
+      </div>
     </div>
-    <div class="col-10">
+    <div class="col-sm-12 col-xl-10 mt-5">
       <router-outlet></router-outlet>
     </div>
   </div>

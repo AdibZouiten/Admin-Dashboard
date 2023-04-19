@@ -1,0 +1,18 @@
+<form autocomplete="off">
+    <h1>Add user form</h1>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nom Service</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="Services.nomService" name="nomService" placeholder="marketing">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">ID Direction</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="Services.idDirection" name="idDirection" placeholder="123">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">ID Chef Service</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="Services.idChefService" name="idChefService" placeholder="123">
+    </div>
+    
+    <button type="submit" class="btn btn-success" (click)="createService()">Submit</button>
+    <input autocomplete="false" name="hidden" type="text" style="display:none;">
+</form>
